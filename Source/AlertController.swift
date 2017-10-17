@@ -255,7 +255,7 @@ public class AlertController: UIViewController {
     }
 
     public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return self.presentingViewController?.supportedInterfaceOrientations ?? super.supportedInterfaceOrientations
+        return [.allButUpsideDown]
     }
 
     // MARK: - Private
